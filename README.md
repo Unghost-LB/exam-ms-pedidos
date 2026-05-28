@@ -35,6 +35,13 @@ Este proyecto está configurado para despliegue automático en **Render**:
 3. Configurar el *Start Command*: `java -jar target/*.jar`
 4. Añadir las variables de entorno de conexión a base de datos.
 
+En este caso las conexiones a Render ya se realizaron.
+Configuración de la petición:
+1. Abre Postman y crea una nueva Request.
+2. Selecciona el método HTTP correspondiente (ej. GET para listar, POST para crear).
+3. En la barra de direcciones, escribe el siguiente endpoint:
+Enlace de despliegue en Render (API lista para probar en Postman):
+ - Pedidos: https://ms-pedidos-yt91.onrender.com/api/pedidos
 ---
 **Examen Final | Docente: Nike Rodriguez**
 **CodiGo By Tecsup**
