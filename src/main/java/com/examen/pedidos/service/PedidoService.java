@@ -62,8 +62,8 @@ public class PedidoService {
         Pedido pedido = pedidoRepository.findById(id)
                 .orElseThrow(() -> new PedidoNotFoundException(id));
 
-        String nuevoEstado = dto.getEstado().toUpperCase();
-        String estadoActual = pedido.getEstado().toUpperCase();
+        String nuevoEstado = dto.getEstado().toUpperCase().trim();
+        String estadoActual = pedido.getEstado().toUpperCase().trim();
 
         // LÓGICA DE PROTECCIÓN (Asegura que el flujo sea lógico)
 
